@@ -9,8 +9,8 @@ import twitter from "../img/social/twitter.svg";
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="text-cyan-400 bg-black font-semibold border-t border-blue-grey-900 flex flex-col sm:flex-row  sm:justify-around sm:items-center">
-        <div className="w-24 border rounded-lg overflow-hidden border-cyan-400 mt-10 mx-auto sm:mx-0 sm:mt-0">
+      <footer className="text-light-blue-vivid-400 bg-black font-semibold border-t border-cool-grey-900 flex flex-col sm:flex-row  sm:justify-around sm:items-center">
+        <div className="w-24 border rounded-lg overflow-hidden border-light-blue-vivid-400 mt-10 mx-auto sm:mx-0 sm:mt-0">
           <img
             src={logo}
             alt="Excellent Tech Solutions"
@@ -22,14 +22,14 @@ const Footer = class extends React.Component {
             <li>
               <Link
                 to="/"
-                className="rounded hover:text-cyan-700 focus:text-cyan-700 focus:outline-none px-2 py-1"
+                className="rounded hover:text-light-blue-vivid-700 focus:text-light-blue-vivid-700 focus:outline-none px-2 py-1"
               >
                 Home
               </Link>
             </li>
             <li>
               <Link
-                className="rounded hover:text-cyan-700 focus:text-cyan-700 focus:outline-none px-2 py-1"
+                className="rounded hover:text-light-blue-vivid-700 focus:text-light-blue-vivid-700 focus:outline-none px-2 py-1"
                 to="/about"
               >
                 About
@@ -37,7 +37,7 @@ const Footer = class extends React.Component {
             </li>
             <li>
               <Link
-                className="rounded hover:text-cyan-700 focus:text-cyan-700 focus:outline-none px-2 py-1"
+                className="rounded hover:text-light-blue-vivid-700 focus:text-light-blue-vivid-700 focus:outline-none px-2 py-1"
                 to="/blog"
               >
                 Latest Stories
@@ -45,7 +45,7 @@ const Footer = class extends React.Component {
             </li>
             <li>
               <Link
-                className="rounded hover:text-cyan-700 focus:text-cyan-700 px-2 py-1"
+                className="rounded hover:text-light-blue-vivid-700 focus:text-light-blue-vivid-700 px-2 py-1"
                 to="/contact"
               >
                 Contact
@@ -56,7 +56,7 @@ const Footer = class extends React.Component {
         <div className="flex justify-around py-10">
           <a
             title="facebook"
-            className="bg-cyan-200 p-3 hover:bg-cyan-400 focus:bg-cyan-400 focus:outline-none rounded"
+            className="bg-light-blue-vivid-200 p-3 hover:bg-light-blue-vivid-400 focus:bg-light-blue-vivid-400 focus:outline-none rounded"
             href="https://facebook.com"
           >
             <img
@@ -67,7 +67,7 @@ const Footer = class extends React.Component {
           </a>
           <a
             title="twitter"
-            className="bg-cyan-200 p-3 hover:bg-cyan-400 focus:bg-cyan-400 focus:outline-none rounded sm:mx-2"
+            className="bg-light-blue-vivid-200 p-3 hover:bg-light-blue-vivid-400 focus:bg-light-blue-vivid-400 focus:outline-none rounded sm:mx-2"
             href="https://twitter.com"
           >
             <img
@@ -79,7 +79,7 @@ const Footer = class extends React.Component {
           </a>
           <a
             title="instagram"
-            className="bg-cyan-200 p-3 hover:bg-cyan-400 focus:bg-cyan-400 focus:outline-none"
+            className="bg-light-blue-vivid-200 p-3 hover:bg-light-blue-vivid-400 focus:bg-light-blue-vivid-400 focus:outline-none"
             href="https://instagram.com"
           >
             <img

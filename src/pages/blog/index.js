@@ -14,7 +14,7 @@ export default class BlogIndexPage extends React.Component {
             height: `26rem`
           }}
         >
-          <h1 className="text-blue-grey-050 text-3xl sm:text-5xl font-bold px-6 py-4"
+          <h1 className="text-cool-grey-050 text-3xl sm:text-5xl font-bold px-6 py-4"
           >
             Blog
           </h1>

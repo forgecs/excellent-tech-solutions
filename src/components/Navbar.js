@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="text-cyan-500 bg-black border-t-4 border-cyan-500 font-semibold"
+      className="text-light-blue-vivid-500 bg-black border-t-4 border-light-blue-vivid-500 font-semibold"
       role="navigation"
       aria-label="main-navigation"
     >
@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="container flex items-center justify-between px-10 py-5">
           <Link to="/" title="Logo">
             <img
-              className="w-24 rounded-lg border-2 border-cyan-400"
+              className="w-24 rounded-lg border-2 border-light-blue-vivid-400 focus:outline-none"
               src={logo}
               alt="Exellent Tech Solutions"
             />
@@ -33,9 +33,9 @@ const Navbar = () => {
               onClick={toggle}
               onKeyPress={toggleKeyPress}
               type="button"
-              className="text-cyan-500 hover:bg-blue-grey-900 focus:bg-blue-grey-900 rounded-full focus:outline-none p-1"
+              className="text-light-blue-vivid-500 hover:bg-cool-grey-900 focus:bg-cool-grey-900 rounded-full focus:outline-none p-1"
             >
-              <svg className="h-6 w-6 fill-current" viewBox="0 0 24 24">
+              <svg className="h-8 w-8 fill-current" viewBox="0 0 24 24">
                 {isOpen ? (
                   <path
                     fillRule="evenodd"
@@ -57,19 +57,19 @@ const Navbar = () => {
           className={`px-5 pb-4 sm:pb-0 sm:flex ${isOpen ? "block" : "hidden"}`}
         >
           <Link
-            className="block px-5 mt-1 sm:mt-0 hover:bg-blue-grey-900 focus:outline-none focus:bg-blue-grey-900 rounded"
+            className="block px-5 mt-1 sm:mt-0 hover:bg-cool-grey-900 focus:outline-none focus:bg-cool-grey-900 rounded"
             to="/about"
           >
             About
           </Link>
           <Link
-            className="block px-5 mt-1 sm:mt-0 hover:bg-blue-grey-900 focus:outline-none focus:bg-blue-grey-900 rounded"
+            className="block px-5 mt-1 sm:mt-0 hover:bg-cool-grey-900 focus:outline-none focus:bg-cool-grey-900 rounded"
             to="/blog"
           >
             Blog
           </Link>
           <Link
-            className="block px-5 mt-1 sm:mt-0 hover:bg-blue-grey-900 focus:outline-none focus:bg-blue-grey-900 rounded"
+            className="block px-5 mt-1 sm:mt-0 hover:bg-cool-grey-900 focus:outline-none focus:bg-cool-grey-900 rounded"
             to="/contact"
           >
             Contact

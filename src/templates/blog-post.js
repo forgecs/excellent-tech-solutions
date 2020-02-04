@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react";
+import PropTypes from "prop-types";
+import { kebabCase } from "lodash";
+import Helmet from "react-helmet";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/Layout";
+import Content, { HTMLContent } from "../components/Content";
 
 export const BlogPostTemplate = ({
   content,
@@ -12,19 +12,17 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
-  helmet,
+  helmet
 }) => {
-  const PostContent = contentComponent || Content
+  const PostContent = contentComponent || Content;
 
   return (
     <section>
-      {helmet || ''}
-      <div className="markdown text-blue-grey-200 bg-black">
+      {helmet || ""}
+      <div className="markdown text-cool-grey-200 bg-black">
         <div className="columns">
           <div className=" max-w-xl px-4 mx-auto py-16">
-            <h1 className="font-bold text-2xl tracking-wide">
-              {title}
-            </h1>
+            <h1 className="font-bold text-2xl tracking-wide">{title}</h1>
             <p className="mt-8">{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
@@ -33,7 +31,12 @@ export const BlogPostTemplate = ({
                 <ul className="flex flex-wrap mt-0">
                   {tags.map(tag => (
                     <li key={tag + `tag`}>
-                      <Link className="font-semibold text-blue-700 pl-4" to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
+                      <Link
+                        className="font-semibold text-blue-700 pl-4"
+                        to={`/tags/${kebabCase(tag)}/`}
+                      >
+                        {tag}
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -43,19 +46,19 @@ export const BlogPostTemplate = ({
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.object,
-}
+  helmet: PropTypes.object
+};
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
@@ -76,16 +79,16 @@ const BlogPost = ({ data }) => {
         title={post.frontmatter.title}
       />
     </Layout>
-  )
-}
+  );
+};
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-}
+    markdownRemark: PropTypes.object
+  })
+};
 
-export default BlogPost
+export default BlogPost;
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
@@ -100,4 +103,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

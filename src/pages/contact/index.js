@@ -38,12 +38,12 @@ export default class Index extends React.Component {
       <Layout>
         <section className="bg-black pt-10">
           <div className="flex flex-col items-center">
-            <h1 className="font-bold text-blue-grey-200 text-2xl sm:text-4xl">
+            <h1 className="font-bold text-cool-grey-200 text-2xl sm:text-4xl">
               Contact
             </h1>
             <div className="w-full max-w-xs sm:max-w-sm px-4 pb-16 mt-10">
               <form
-                className="bg-black border border-blue-grey-900 rounded px-8 pt-6 pb-8"
+                className="bg-black border border-cool-grey-900 rounded px-8 pt-6 pb-8"
                 name="contact"
                 method="post"
                 action="/contact/thanks/"
@@ -62,7 +62,7 @@ export default class Index extends React.Component {
                 <div className="field">
                   <div className="control">
                     <input
-                      className="bg-gray-900 active:bg-gray-900 text-gray-700 rounded w-full px-3 py-2 placeholder-gray-700 font-medium leading-tight focus:border-cyan-500 focus:outline-none mt-2"
+                      className="bg-gray-900 active:bg-gray-900 text-gray-700 rounded w-full px-3 py-2 placeholder-gray-700 font-medium leading-tight focus:border-light-blue-vivid-500 focus:outline-none mt-2"
                       type={"text"}
                       name={"name"}
                       onChange={this.handleChange}
@@ -75,7 +75,7 @@ export default class Index extends React.Component {
                 <div className="field mt-6">
                   <div className="control">
                     <input
-                      className="bg-gray-900 active:bg-gray-900 text-gray-700 rounded w-full px-3 py-2 placeholder-gray-700 font-medium leading-tight focus:border-cyan-500 focus:outline-none mt-2"
+                      className="bg-gray-900 active:bg-gray-900 text-gray-700 rounded w-full px-3 py-2 placeholder-gray-700 font-medium leading-tight focus:border-light-blue-vivid-500 focus:outline-none mt-2"
                       type={"email"}
                       name={"email"}
                       onChange={this.handleChange}
@@ -88,7 +88,7 @@ export default class Index extends React.Component {
                 <div className="field mt-6">
                   <div className="control">
                     <textarea
-                      className="bg-gray-900 active:bg-gray-900 text-gray-700 rounded w-full px-3 py-2 placeholder-gray-700 font-medium leading-tight focus:border-cyan-500 focus:outline-none mt-2"
+                      className="bg-gray-900 active:bg-gray-900 text-gray-700 rounded w-full px-3 py-2 placeholder-gray-700 font-medium leading-tight focus:border-light-blue-vivid-500 focus:outline-none mt-2"
                       name={"message"}
                       onChange={this.handleChange}
                       id={"message"}
@@ -100,7 +100,7 @@ export default class Index extends React.Component {
                 </div>
                 <div className="field flex justify-center items-center">
                   <button
-                    className="font-semibold text-gray-100 sm:text-lg bg-cyan-500 px-4 py-2 sm:px-5 sm:py-3 rounded mt-10 hover:bg-cyan-600 focus:bg-cyan-600"
+                    className="font-semibold text-gray-100 sm:text-lg bg-light-blue-vivid-500 px-4 py-2 sm:px-5 sm:py-3 rounded mt-10 hover:bg-light-blue-vivid-600 focus:bg-light-blue-vivid-600"
                     type="submit"
                   >
                     Send

@@ -13,7 +13,7 @@ class BlogRoll extends React.Component {
         {posts &&
           posts.map(({ node: post }) => (
             <div
-              className="flex-grow max-w-sm border border-blue-grey-900 rounded shadow-lg mt-10 mx-5"
+              className="flex-grow max-w-sm border border-cool-grey-900 rounded shadow-lg mt-10 mx-5"
               key={post.id}
             >
               <article
@@ -34,23 +34,23 @@ class BlogRoll extends React.Component {
                   ) : null}
                   <p className="flex items-start flex-col px-4 py-6">
                     <Link
-                      className="font-bold text-cyan-400 hover:text-cyan-600"
+                      className="font-bold text-light-blue-vivid-400 hover:text-light-blue-vivid-600"
                       to={post.fields.slug}
                     >
                       {post.frontmatter.title}
                     </Link>
                     {/* <span> &bull; </span> */}
-                    <span className="text-blue-grey-200">
+                    <span className="text-cool-grey-200">
                       {post.frontmatter.date}
                     </span>
                   </p>
                 </header>
-                <p className="text-blue-grey-200 px-4 pb-8">
+                <p className="text-cool-grey-200 px-4 pb-8">
                   {post.excerpt}
                   <br />
                   <br />
                   <Link
-                    className="font-semibold text-cyan-700 px-4 py-2 rounded border-2 border-cyan-400 hover:bg-cyan-400 hover:text-blue-grey-100"
+                    className="font-semibold text-light-blue-vivid-700 px-4 py-2 rounded border-2 border-light-blue-vivid-400 hover:bg-light-blue-vivid-400 hover:text-cool-grey-100"
                     to={post.fields.slug}
                   >
                     Keep Reading →
