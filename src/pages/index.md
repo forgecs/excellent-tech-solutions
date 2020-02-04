@@ -1,13 +1,13 @@
 ---
 templateKey: index-page
-title: Website Title
-image: /img/home-jumbotron.jpg
-heading: Website Heading
-subheading: Website Subheading
+title: Excellent Tech Solutions
+image: /img/header-1.jpg
+heading: Heading
+subheading: Subheading
 mainpitch:
-  title: Main Pitch Title
+  title: Mainpitch Title
   description: |
-    Main Pitch Description
+    Mainpitch Description
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
