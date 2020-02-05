@@ -6,6 +6,7 @@ import Layout from "../components/Layout";
 import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
 
+
 export const IndexPageTemplate = ({
   image,
   title,
@@ -27,11 +28,17 @@ export const IndexPageTemplate = ({
     >
       <div className="h-full flex flex-col justify-center items-center">
         <h1 className="text-cool-grey-050 text-4xl sm:text-5xl tracking-tight leading-none uppercase px-4 py-2">
-          <span className="text-light-blue-vivid-500">E</span>xcellent
-          <br />
-          <span className="text-light-blue-vivid-500">T</span>ech
-          <br />
-          <span className="text-light-blue-vivid-500">S</span>olutions
+          <div className="excellent">
+            <span className="text-light-blue-vivid-500">E</span>xcellent
+            <br />
+          </div>
+          <div className="tech">
+            <span className="text-light-blue-vivid-500">T</span>ech
+            <br />
+          </div>
+          <div className="solutions">
+            <span className="text-light-blue-vivid-500">S</span>olutions
+          </div>
         </h1>
 
         {/* <h1 className="text-cool-grey-050 text-3xl sm:text-5xl font-bold px-4 py-2">

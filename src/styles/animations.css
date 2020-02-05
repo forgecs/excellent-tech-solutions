@@ -1,0 +1,26 @@
+.excellent {
+  opacity: 0;
+  animation: 1s ease 1s forwards moveInBottom;
+}
+
+.tech {
+  opacity: 0;
+  animation: 1s ease 2s forwards moveInBottom;
+}
+
+.solutions {
+  opacity: 0;
+  animation: 1s ease 3s forwards moveInBottom;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(96px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
